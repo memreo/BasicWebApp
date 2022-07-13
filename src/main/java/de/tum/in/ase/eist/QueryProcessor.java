@@ -19,8 +19,22 @@ public class QueryProcessor {
         // else if (query.contains("name")) {
         //    return "MyTeam";
         // } 
-        else if (query.contains(" which of the following numbers is the largest: 414, 81")){
-            return "414 of course:)";
+        else if (query.contains(" which of the following numbers is the largest: ")){
+            String[] f =  query.split(":");
+            String[] s = f[1].split(",");
+            for(int i = 0; i<= s.length; i++){
+                s[i] = s[i].replace(" ", "");
+            }
+            int a = Integer.parseInt(s[0]);
+            int b = Integer.parseInt(s[1]);
+            if(a > b){
+                return a+"is the largest";
+            }
+            else{
+                return b+"is the largest";
+            }
+
+
         }
 
         else if(query.contains("what is 9 plus 10")){
