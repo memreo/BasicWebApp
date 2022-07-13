@@ -14,7 +14,7 @@ public class QueryProcessor {
                     "writer in the English language and the world's pre-eminent dramatist.";
 
         } 
-        else if (query.contains("what is your name")) {
+        else if (query.contains(" what is your name")) {
             return "Emre ur best friend:)";}
         else if (query.contains("name")) {
            return "MyTeam";
