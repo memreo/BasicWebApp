@@ -2,6 +2,7 @@ package de.tum.in.ase.eist;
 
 import org.springframework.stereotype.Service;
 
+
 @Service
 public class QueryProcessor {
 
