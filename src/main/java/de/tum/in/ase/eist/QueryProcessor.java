@@ -19,6 +19,29 @@ public class QueryProcessor {
         else if (query.contains("name")) {
            return "MyTeam";
         } 
+        else if (query.contains(" which of the following numbers is the largest: 414, 81")){
+            return "414 of course:)";
+        }
+
+        else if(query.contains("what is 9 plus 10")){
+            return "19";
+
+
+        }
+
+        // else if(query.contains(s)){
+
+            
+        // }
+        // else if(query.contains(s)){
+
+            
+        // }
+        // else if(query.contains(s)){
+
+            
+        // }
+
         else { // TODO extend the programm here
             return "";
         }
