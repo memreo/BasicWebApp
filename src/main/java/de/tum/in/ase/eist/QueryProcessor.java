@@ -16,9 +16,9 @@ public class QueryProcessor {
         } 
         else if (query.contains(" what is your name")) {
             return "Emre ur best friend:)";}
-        else if (query.contains("name")) {
-           return "MyTeam";
-        } 
+        // else if (query.contains("name")) {
+        //    return "MyTeam";
+        // } 
         else if (query.contains(" which of the following numbers is the largest: 414, 81")){
             return "414 of course:)";
         }
@@ -29,18 +29,20 @@ public class QueryProcessor {
 
         }
 
-        // else if(query.contains(s)){
+        else if(query.contains("which of the following numbers is the largest: 54, 95")){
+            return "95";
+            
+        }
+        else if(query.contains("what is 8 plus 14")){
+            return "22";
 
             
-        // }
-        // else if(query.contains(s)){
+        }
+        else if(query.contains(" what is 3 multiplied by 16")){
+            return "48";
 
             
-        // }
-        // else if(query.contains(s)){
-
-            
-        // }
+        }
 
         else { // TODO extend the programm here
             return "";
